@@ -3,11 +3,6 @@ import cv2
 
 asli = cv2.imread('asli1.jpg')
 
-equ = np.copy(asli)
-
-for i  in range (3) :
-    equ[:,:,i] = cv2.equalizeHist(asli[:,:,i])
-
 referensi =  cv2.imread('referensi1.jpg')
 hasilmatch = np.copy(asli)
 
